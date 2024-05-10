@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center">sign up</h1>
+    <form class="d-flex flex-column w-25 mx-auto gap-2 align-item-center">
+        <div class="w-100">
+            <label for="username">username:</label>
+            <input class="form-control" type="text" name="username" placeholder="Enter your username...">
+            <label for="username">password:</label>
+            <input class="form-control" type="password" name="password" placeholder="Enter your password..." id="password">
+            <label for="username">reapeted password:</label>
+            <input class="form-control" type="password" name="password-repead" placeholder="Repeat your password..." id="password_repead">
+            <label for="username">email:</label>
+            <input class="form-control" type="email" name="email" placeholder="Enter your email..." id="email">
+            <label for="username">Data burn:</label>
+            <input class="form-control" type="date" name="age" id="age" placeholder="Enter your age..." max="100" min="0">
+        </div>
+        <div>
+            <span>мужской</span>
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+            <span>женский</span>
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+        </div>
+        <span>
+            <span>пользовательное соглашение</span>
+            <input class="form-check-input" type="checkbox" name="user_agrement" id="ua">
+        </span>
+        <div>
+            <span>подписаться на рассылку</span>
+            <input class="form-check-input" type="checkbox" name="spam" id="spam">
+        </div>
+        <button class="btn btn-outline-dark w-50% mx-auto" type="submit">confirm</button>
+    </form>
+</body>
+</html>

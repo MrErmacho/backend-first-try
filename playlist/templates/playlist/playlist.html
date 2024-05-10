@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% block title %}playlist{% endblock %}
+{% block content %}
+    <div class="container align-items-center">
+        {% for Video in Videos %}
+        <div class="card w-75 mx-auto">
+            <div class="card-body">
+                <h5 class="card-title text-warning">{{Video.title}}</h5>
+                <p class="card-text">{{Video.description}}</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{Video.embed}}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div>
+                    <img width="20" height="20" src="https://img.icons8.com/stickers/100/facebook-like.png"
+                        alt="facebook-like" />
+                    <span class="fs-5 fl-border">{{Video.likes}}</span>
+                </div>
+        </div>
+    </div>
+   
+    {% endfor %}
+</div>
+{% endblock %}

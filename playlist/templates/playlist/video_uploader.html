@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+{% block title %}upload{% endblock %}
+{% block content %}
+    <h1 class="">Загрузить видео</h1>
+    <form method="post" class="d-flex flex-column w-25 mx-auto gap-2 align-item-center">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Введите название">
+        <input type="text" name="embed" placeholder="Введите embed">
+        <input type="text" name="description" placeholder="Введите описание">
+        <button type="submit">Загрузить</button>
+    </form>
+{% endblock %}
